@@ -130,22 +130,12 @@
       <change afterPath="$PROJECT_DIR$/../super_vector/vector.cpp" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../super_vector/vector.hpp" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../super_vector/vector_testing.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vector.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/counted.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/counted.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fault_injection.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fault_injection.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gtest/gtest-all.cc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gtest/gtest.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gtest/gtest_main.cc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vector.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vector_testing.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../a.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/vector_testing.dir/vector_testing.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/vector_testing" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/vector_testing" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vector.h" beforeDir="false" afterPath="$PROJECT_DIR$/vector.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vector_testing.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/vector_testing.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -168,50 +158,51 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="__functional_base" value="17" />
+          <entry key="__functional_base" value="18" />
           <entry key="__tree" value="5" />
-          <entry key="cc" value="9" />
-          <entry key="cpp" value="72" />
-          <entry key="functional" value="8" />
-          <entry key="h" value="31" />
+          <entry key="__tuple" value="2" />
+          <entry key="cc" value="14" />
+          <entry key="cpp" value="80" />
+          <entry key="functional" value="9" />
+          <entry key="h" value="33" />
           <entry key="iterator" value="6" />
-          <entry key="memory" value="6" />
+          <entry key="memory" value="8" />
           <entry key="new" value="1" />
           <entry key="set" value="3" />
           <entry key="txt" value="5" />
-          <entry key="type_traits" value="12" />
+          <entry key="type_traits" value="13" />
           <entry key="variant" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CMakeLists.txt" value="5" />
-          <entry key="ObjectiveC" value="178" />
+          <entry key="ObjectiveC" value="200" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cpp" value="1029" />
-          <entry key="h" value="9614" />
-          <entry key="mm" value="654" />
+          <entry key="cpp" value="1100" />
+          <entry key="h" value="10889" />
+          <entry key="mm" value="687" />
           <entry key="txt" value="69" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CMakeLists.txt" value="69" />
-          <entry key="ObjectiveC" value="11297" />
+          <entry key="ObjectiveC" value="12676" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/vector_testing.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="7946">
-              <caret line="969" column="39" selection-start-line="969" selection-start-column="39" selection-end-line="969" selection-end-column="39" />
+            <state relative-caret-position="111">
+              <caret line="1035" selection-start-line="1035" selection-end-line="1035" />
               <folding>
                 <element signature="e#0#24#0" expanded="true" />
               </folding>
@@ -220,25 +211,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/counted.cpp">
+        <entry file="file://$PROJECT_DIR$/gtest/gtest-all.cc">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="121">
-              <caret line="21" selection-start-line="21" selection-end-line="21" />
-              <folding>
-                <element signature="e#0#20#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/vector.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="894">
-              <caret line="576" column="36" selection-start-line="576" selection-start-column="36" selection-end-line="576" selection-end-column="36" />
-              <folding>
-                <element signature="e#131#143#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="305">
+              <caret line="6140" selection-start-line="6140" selection-end-line="6140" />
             </state>
           </provider>
         </entry>
@@ -246,8 +222,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/fault_injection.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="236">
-              <caret line="93" selection-start-line="93" selection-end-line="93" />
+            <state relative-caret-position="121">
+              <caret line="122" selection-start-line="122" selection-end-line="122" />
               <folding>
                 <element signature="e#1071#1476#0" expanded="true" />
                 <element signature="e#2397#2401#0" expanded="true" />
@@ -257,12 +233,13 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fault_injection.h">
+        <entry file="file://$PROJECT_DIR$/vector.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="112">
-              <caret line="7" selection-start-line="7" selection-end-line="7" />
+            <state relative-caret-position="258">
+              <caret line="526" selection-start-line="526" selection-end-line="526" />
               <folding>
-                <element signature="e#14#35#0" expanded="true" />
+                <element signature="e#131#143#0" expanded="true" />
+                <element signature="e#402#412#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -272,13 +249,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>==</find>
-      <find>fa</find>
-      <find>faulty</find>
-      <find>reserve</find>
-      <find>vector(</find>
-      <find>beg</find>
-      <find>push_back_element_of_itself</find>
       <find>std::cerr</find>
       <find>be</find>
       <find>const_ref</find>
@@ -286,7 +256,6 @@
       <find>begin</find>
       <find>size_in_ptr()</find>
       <find>size_in_ptr</find>
-      <find>operator=</find>
       <find>dest</find>
       <find>push_back_si</find>
       <find>free</find>
@@ -300,8 +269,16 @@
       <find>rese</find>
       <find>empty</find>
       <find>inse</find>
-      <find>insert</find>
       <find>erase</find>
+      <find>reserve_and_insert</find>
+      <find>assig</find>
+      <find>res</find>
+      <find>allocate_and_cop</find>
+      <find>resiz</find>
+      <find>destroy</find>
+      <find>operator=</find>
+      <find>insert</find>
+      <find>reserve_a</find>
     </findStrings>
     <replaceStrings>
       <replace>get_data(</replace>
@@ -309,7 +286,7 @@
     </replaceStrings>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -409,15 +386,16 @@
       <updated>1561124828830</updated>
       <workItem from="1561124830289" duration="817000" />
       <workItem from="1561125683277" duration="54502000" />
-      <workItem from="1561464517419" duration="36281000" />
+      <workItem from="1561464517419" duration="44114000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="91600000" />
+    <option name="totallyTimeSpent" value="99433000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4965035" visible="true" weight="0.21486267" />
       <window_info id="Structure" order="1" sideWeight="0.5034965" side_tool="true" weight="0.25767368" />
@@ -425,13 +403,13 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32913166" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.36414567" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39915967" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.39915967" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Messages" order="8" weight="0.32633054" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.32913166" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32913166" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="CMake" order="12" weight="0.32913166" />
@@ -450,16 +428,6 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/vector_testing.cpp</url>
-          <line>1012</line>
-          <option name="timeStamp" value="258" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/vector_testing.cpp</url>
-          <line>284</line>
-          <option name="timeStamp" value="273" />
-        </line-breakpoint>
         <breakpoint type="OCSymbolicBreakpointType">
           <properties />
           <option name="timeStamp" value="171" />
@@ -468,6 +436,16 @@
           <properties />
           <option name="timeStamp" value="172" />
         </breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/vector_testing.cpp</url>
+          <line>1035</line>
+          <option name="timeStamp" value="317" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/vector.h</url>
+          <line>525</line>
+          <option name="timeStamp" value="345" />
+        </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
@@ -484,11 +462,38 @@
       <configuration name="CMakeRunConfiguration">
         <watch expression="instances.size()" language="ObjectiveC" />
         <watch expression="capacity()" language="ObjectiveC" />
+        <watch expression="size()" language="ObjectiveC" />
+        <watch expression="new_vector.size()" language="ObjectiveC" />
       </configuration>
     </watches-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="watch">
+      <expression>
+        <expression-string>new_vector.size()</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>size_in_ptr(ptr)</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>*ptr</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>ptr.size()</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>size()</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>instances</expression-string>
         <language-id>ObjectiveC</language-id>
@@ -496,11 +501,6 @@
       </expression>
       <expression>
         <expression-string>capacity()</expression-string>
-        <language-id>ObjectiveC</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>size()</expression-string>
         <language-id>ObjectiveC</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
@@ -516,26 +516,6 @@
       </expression>
       <expression>
         <expression-string>faul</expression-string>
-        <language-id>ObjectiveC</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>instances.size()</expression-string>
-        <language-id>ObjectiveC</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>size_in_ptr(ptr)</expression-string>
-        <language-id>ObjectiveC</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>*instances.begin()</expression-string>
-        <language-id>ObjectiveC</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>*(++instances.begin())</expression-string>
         <language-id>ObjectiveC</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
@@ -608,10 +588,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/fault_injection.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="e#14#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gtest/gtest_main.cc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/gtest/gtest.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="2000" selection-start-line="2000" selection-end-line="2000" />
+        <state relative-caret-position="134">
+          <caret line="20057" selection-start-line="20057" selection-end-line="20057" />
         </state>
       </provider>
     </entry>
@@ -636,24 +633,59 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gtest/gtest-all.cc">
+    <entry file="file:///Library/Developer/CommandLineTools/usr/include/c++/v1/__tuple">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="6140" selection-start-line="6140" selection-end-line="6140" />
+        <state relative-caret-position="146">
+          <caret line="287" column="4" selection-start-line="287" selection-start-column="4" selection-end-line="287" selection-end-column="4" />
         </state>
       </provider>
     </entry>
     <entry file="file:///Library/Developer/CommandLineTools/usr/include/c++/v1/memory">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="3323" selection-start-line="3323" selection-end-line="3323" />
+        <state relative-caret-position="129">
+          <caret line="3225" column="56" selection-start-line="3225" selection-start-column="56" selection-end-line="3225" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/counted.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
+          <folding>
+            <element signature="e#0#20#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gtest/gtest-all.cc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="305">
+          <caret line="6140" selection-start-line="6140" selection-end-line="6140" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include/stddef.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="61" column="22" selection-start-line="61" selection-start-column="22" selection-end-line="61" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vector.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="526" selection-start-line="526" selection-end-line="526" />
+          <folding>
+            <element signature="e#131#143#0" expanded="true" />
+            <element signature="e#402#412#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/fault_injection.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="93" selection-start-line="93" selection-end-line="93" />
+        <state relative-caret-position="121">
+          <caret line="122" selection-start-line="122" selection-end-line="122" />
           <folding>
             <element signature="e#1071#1476#0" expanded="true" />
             <element signature="e#2397#2401#0" expanded="true" />
@@ -661,42 +693,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fault_injection.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-          <folding>
-            <element signature="e#14#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/counted.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-          <folding>
-            <element signature="e#0#20#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vector_testing.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7946">
-          <caret line="969" column="39" selection-start-line="969" selection-start-column="39" selection-end-line="969" selection-end-column="39" />
+        <state relative-caret-position="111">
+          <caret line="1035" selection-start-line="1035" selection-end-line="1035" />
           <folding>
             <element signature="e#0#24#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vector.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="894">
-          <caret line="576" column="36" selection-start-line="576" selection-start-column="36" selection-end-line="576" selection-end-column="36" />
-          <folding>
-            <element signature="e#131#143#0" expanded="true" />
           </folding>
         </state>
       </provider>

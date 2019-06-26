@@ -15,17 +15,8 @@ struct iterator {
     typedef T *pointer;
     typedef std::random_access_iterator_tag iterator_category;
 
-    template<typename> friend
-    class vector;
-
-    template<typename> friend
-    class vector_const_iterator;
-
-    iterator() = default;
-
-    iterator(iterator const &) = default;
-
-    iterator &operator=(iterator const &) = default;
+    template<typename> friend class vector;
+    template<typename> friend struct const_iterator;
 
     iterator &operator++() {
         ++ptr;
@@ -131,13 +122,7 @@ struct const_iterator {
     template<typename> friend
     class vector;
 
-    const_iterator() = default;
-
-    const_iterator(const_iterator const &) = default;
-
     const_iterator(iterator<T> const &other) : ptr(other.ptr) {}
-
-    const_iterator &operator=(const_iterator const &) = default;
 
     const_iterator &operator++() {
         ++ptr;
@@ -275,7 +260,12 @@ public:
             variant = *first;
         } else {
             auto ptr = allocate(last - first);
-            std::uninitialized_copy(first, last, reinterpret_cast<pointer>(ptr));
+            try {
+                std::uninitialized_copy(first, last, get_data(ptr));
+            } catch (...) {
+                free_empty(ptr);
+                throw;
+            }
             set_size(ptr, last - first);
             set_capacity(ptr, last - first);
             set_counter(ptr, 1);
@@ -300,8 +290,13 @@ public:
 
     template<typename InputIterator>
     void assign(InputIterator first, InputIterator last) {
-        vector(first, last).swap(*this);
-        return *this;
+        if (is_ptr_type()) {
+            free_check(std::get<0>(variant));
+        }
+        variant = nullptr;
+        for (; first != last; ++first) {
+            push_back(*first);
+        }
     }
 
     reference operator[](size_t i) {
@@ -463,55 +458,72 @@ public:
         return is_ptr_type() ? (std::get<0>(variant) ? capacity_in_ptr(std::get<0>(variant)) : 0) : 1;
     }
 
-//            shrink_to_fit
-//    resize
-//            clear
+    void resize(size_t sz, value_type val) {
+        if (!is_ptr_type()) {
+            convert();
+        }
+        if (sz <= size()) {
+            std::destroy(get_data(std::get<0>(variant)) + sz, get_data(std::get<0>(variant)) + size());
+            size_in_ptr(std::get<0>(variant)) = sz;
+            return;
+        }
+        auto ptr = allocate_and_copy(sz, std::get<0>(variant));
+        try {
+            for (auto it = get_data(ptr) + size(); it != get_data(ptr) + sz; it++) {
+                construct(it, val);
+                size_in_ptr(ptr)++;
+            }
+        } catch (...) {
+            free_always(ptr);
+            throw;
+        }
+        free_check(std::get<0>(variant));
+        variant = ptr;
+    }
 
-    iterator insert(const_iterator pos, T const &val) {
+    void clear() {
+        if (is_ptr_type()) {
+            free_check(std::get<0>(variant));
+        }
+        variant = nullptr;
+    }
+
+    void insert(const_iterator pos, T const &val) {
         if (pos == end()) {
-            push_back(val);
-            return end() - 1;
+            try {
+                push_back(val);
+            } catch (...) {
+                clear();
+                throw;
+            }
+            return;
         }
         if (is_ptr_type()) {
-            info_pointer new_ptr = allocate((size() == capacity()) ? capacity() * 2 : capacity());
-            pointer ptr = get_data(new_ptr);
+            vector buffer;
             try {
-                std::uninitialized_copy(begin(), iterator(pos.ptr), ptr);
+                for (size_t i = 0; i < pos - begin(); i++) {
+                    buffer.push_back(get_data(std::get<0>(variant))[i]);
+                }
+                buffer.push_back(val);
+                for (size_t i = pos - begin(); i < size(); i++) {
+                    buffer.push_back(get_data(std::get<0>(variant))[i]);
+                }
             } catch (...) {
-                free_empty(new_ptr);
+                buffer.clear();
                 throw;
             }
-            size_in_ptr(new_ptr) = pos - begin();
-            capacity_in_ptr(new_ptr) = size() == capacity() ? capacity() * 2 : capacity();
-            counter_in_ptr(new_ptr) = 1;
-            ptr += pos - begin();
-            try {
-                construct(ptr, val);
-            } catch (...) {
-                free_always(new_ptr);
-                throw;
-            }
-            ++size_in_ptr(new_ptr);
-            ++ptr;
-            try {
-                std::uninitialized_copy(iterator(pos.ptr), end(), iterator(ptr));
-            } catch (...) {
-                free_always(new_ptr);
-                throw;
-            }
-            size_in_ptr(new_ptr) += end() - pos;
-            free_check(std::get<0>(variant));
-            variant = new_ptr;
-            return iterator(get_data(new_ptr) + (pos - begin()));
+            *this = buffer;
+            return;
         }
-        if (pos != begin()) {
-            throw std::runtime_error("incorrect position");
+        vector buffer;
+        try {
+            buffer.push_back(*begin());
+            buffer.push_back(val);
+        } catch (...) {
+            buffer.clear();
+            throw;
         }
-        vector<value_type> buffer;
-        buffer.push_back(*begin());
-        buffer.push_back(val);
         swap(buffer);
-        return begin();
     }
 
     iterator erase(const_iterator pos) {
@@ -526,13 +538,13 @@ public:
             copy_if_necessary(std::get<0>(variant));
             if (last == end()) {
                 std::destroy(first.ptr, last.ptr);
-                size_t delta = last - first;
+                auto delta = static_cast<size_t>(last - first);
                 size_in_ptr(std::get<0>(variant)) -= delta;
                 return end();
             }
             size_t begin_size = first - begin();
-            size_t erase_size = last - first;
-            size_t end_size = end() - last;
+            auto erase_size = static_cast<size_t>(last - first);
+            auto end_size = static_cast<size_t>(end() - last);
             pointer begin_ptr = data();
             pointer erase_ptr = data() + begin_size;
             pointer end_ptr = data() + begin_size + erase_size;
@@ -632,11 +644,11 @@ private:
     void allocate_and_push_back(const_reference a) {
         if (!is_ptr_type()) {
             info_pointer ptr = nullptr;
+            ptr = allocate(2);
+            set_size(ptr, 1);
+            set_capacity(ptr, 2);
+            set_counter(ptr, 1);
             try {
-                ptr = allocate(2);
-                set_size(ptr, 1);
-                set_capacity(ptr, 2);
-                set_counter(ptr, 1);
                 construct(get_data(ptr), std::get<1>(variant));
             } catch (...) {
                 free_empty(ptr);
@@ -719,10 +731,10 @@ private:
             return new_ptr;
         }
         assert(sz >= size_in_ptr(ptr));
+        size_in_ptr(new_ptr) = size_in_ptr(ptr);
+        capacity_in_ptr(new_ptr) = sz;
+        counter_in_ptr(new_ptr) = counter_in_ptr(ptr);
         try {
-            size_in_ptr(new_ptr) = size_in_ptr(ptr);
-            capacity_in_ptr(new_ptr) = sz;
-            counter_in_ptr(new_ptr) = counter_in_ptr(ptr);
             std::uninitialized_copy(get_data(ptr), get_data(ptr) + size_in_ptr(ptr), get_data(new_ptr));
         } catch (...) {
             free_empty(new_ptr);
