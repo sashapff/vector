@@ -477,7 +477,9 @@ public:
                 size_in_ptr(ptr)++;
             }
         } catch (...) {
-            free_always(ptr);
+            if (counter_in_ptr(ptr) != 1) {
+                free_always(ptr);
+            }
             throw;
         }
         free_check(std::get<0>(variant));

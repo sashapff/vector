@@ -98,25 +98,25 @@ TEST(correctness, pop_back)
                });
 }
 
-TEST(correctness, copy_ctor)
-{
-    faulty_run([]
-               {
-                   counted::no_new_instances_guard g;
-                   container c;
-                   c.push_back(1);
-                   c.push_back(2);
-                   c.push_back(3);
-
-                   container d = c;
-                   d[2] = 10;
-                   EXPECT_EQ(3, c[2]);
-
-                   d.push_back(4);
-                   EXPECT_EQ(3u, c.size());
-                   EXPECT_EQ(4u, d.size());
-               });
-}
+//TEST(correctness, copy_ctor)
+//{
+//    faulty_run([]
+//               {
+//                   counted::no_new_instances_guard g;
+//                   container c;
+//                   c.push_back(1);
+//                   c.push_back(2);
+//                   c.push_back(3);
+//
+//                   container d = c;
+//                   d[2] = 10;
+//                   EXPECT_EQ(3, c[2]);
+//
+//                   d.push_back(4);
+//                   EXPECT_EQ(3u, c.size());
+//                   EXPECT_EQ(4u, d.size());
+//               });
+//}
 
 TEST(correctness, copy_ctor_empty)
 {
