@@ -15,8 +15,11 @@ struct iterator {
     typedef T *pointer;
     typedef std::random_access_iterator_tag iterator_category;
 
-    template<typename> friend class vector;
-    template<typename> friend struct const_iterator;
+    template<typename> friend
+    class vector;
+
+    template<typename> friend
+    struct const_iterator;
 
     iterator &operator++() {
         ++ptr;
@@ -711,9 +714,9 @@ private:
         try {
             construct(get_data(std::get<0>(variant)) + size_in_ptr(std::get<0>(variant)), a);
         } catch (...) {
-            if (counter_in_ptr(std::get<0>(variant)) != 1) {
-                free_always(std::get<0>(variant));
-            }
+//            if (counter_in_ptr(std::get<0>(variant)) != 1) {
+//                free_always(std::get<0>(variant));
+//            }
             throw;
         }
     }

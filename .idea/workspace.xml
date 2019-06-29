@@ -3,7 +3,6 @@
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true" buildAllGenerated="true">
     <generated>
       <config projectName="vector" targetName="vector_testing" />
-      <config projectName="vector" targetName="main" />
     </generated>
   </component>
   <component name="CMakeSettings" AUTO_RELOAD="true">
@@ -13,126 +12,34 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="22264836-d610-4ce1-a6d3-5736c170a04d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../huffman/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../huffman/.idea/huffman.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../huffman/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../huffman/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../huffman/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../huffman/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../huffman/CMakeLists.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../huffman/build/CMakeCache.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../huffman/build/CMakeFiles/3.13.4/CMakeCCompiler.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../huffman/build/CMakeFiles/3.13.4/CMakeCXXCompiler.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../huffman/build/CMakeFiles/3.13.4/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../huffman/build/CMakeFiles/3.13.4/CMakeDetermineCompilerABI_CXX.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../huffman/build/CMakeFiles/3.13.4/CMakeSystem.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../huffman/build/CMakeFiles/3.13.4/CompilerIdC/CMakeCCompilerId.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../huffman/build/CMakeFiles/3.13.4/CompilerIdC/a.out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../huffman/build/CMakeFiles/3.13.4/CompilerIdCXX/CMakeCXXCompilerId.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../huffman/build/CMakeFiles/3.13.4/CompilerIdCXX/a.out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../huffman/build/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../huffman/build/CMakeFiles/CMakeOutput.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../huffman/build/CMakeFiles/Makefile.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../huffman/build/CMakeFiles/Makefile2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../huffman/build/CMakeFiles/TargetDirectories.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../huffman/build/CMakeFiles/cmake.check_cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../huffman/build/CMakeFiles/feature_tests.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../huffman/build/CMakeFiles/feature_tests.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../huffman/build/CMakeFiles/feature_tests.cxx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../huffman/build/CMakeFiles/progress.marks" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../huffman/build/CMakeFiles/testing.dir/CXX.includecache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../huffman/build/CMakeFiles/testing.dir/DependInfo.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../huffman/build/CMakeFiles/testing.dir/build.make" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../huffman/build/CMakeFiles/testing.dir/cmake_clean.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../huffman/build/CMakeFiles/testing.dir/depend.internal" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../huffman/build/CMakeFiles/testing.dir/depend.make" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../huffman/build/CMakeFiles/testing.dir/flags.make" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../huffman/build/CMakeFiles/testing.dir/link.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../huffman/build/CMakeFiles/testing.dir/progress.make" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../huffman/build/CMakeFiles/util.dir/CXX.includecache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../huffman/build/CMakeFiles/util.dir/DependInfo.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../huffman/build/CMakeFiles/util.dir/build.make" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../huffman/build/CMakeFiles/util.dir/cmake_clean.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../huffman/build/CMakeFiles/util.dir/depend.internal" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../huffman/build/CMakeFiles/util.dir/depend.make" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../huffman/build/CMakeFiles/util.dir/flags.make" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../huffman/build/CMakeFiles/util.dir/link.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../huffman/build/CMakeFiles/util.dir/progress.make" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../huffman/build/CMakeFiles/util.dir/utility.cpp.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../huffman/build/Makefile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../huffman/build/README." afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../huffman/build/cmake_install.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../huffman/build/decode_test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../huffman/build/encode_test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../huffman/build/util" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../huffman/cmake-build-debug/CMakeCache.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../huffman/cmake-build-debug/CMakeFiles/3.12.3/CMakeCCompiler.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../huffman/cmake-build-debug/CMakeFiles/3.12.3/CMakeCXXCompiler.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../huffman/cmake-build-debug/CMakeFiles/3.12.3/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../huffman/cmake-build-debug/CMakeFiles/3.12.3/CMakeDetermineCompilerABI_CXX.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../huffman/cmake-build-debug/CMakeFiles/3.12.3/CMakeSystem.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../huffman/cmake-build-debug/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../huffman/cmake-build-debug/CMakeFiles/3.12.3/CompilerIdC/a.out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../huffman/cmake-build-debug/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../huffman/cmake-build-debug/CMakeFiles/3.12.3/CompilerIdCXX/a.out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../huffman/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../huffman/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../huffman/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../huffman/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../huffman/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../huffman/cmake-build-debug/CMakeFiles/clion-environment.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../huffman/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../huffman/cmake-build-debug/CMakeFiles/cmake.check_cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../huffman/cmake-build-debug/CMakeFiles/feature_tests.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../huffman/cmake-build-debug/CMakeFiles/feature_tests.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../huffman/cmake-build-debug/CMakeFiles/feature_tests.cxx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../huffman/cmake-build-debug/CMakeFiles/huffman.dir/CXX.includecache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../huffman/cmake-build-debug/CMakeFiles/huffman.dir/DependInfo.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../huffman/cmake-build-debug/CMakeFiles/huffman.dir/build.make" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../huffman/cmake-build-debug/CMakeFiles/huffman.dir/cmake_clean.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../huffman/cmake-build-debug/CMakeFiles/huffman.dir/depend.internal" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../huffman/cmake-build-debug/CMakeFiles/huffman.dir/depend.make" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../huffman/cmake-build-debug/CMakeFiles/huffman.dir/flags.make" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../huffman/cmake-build-debug/CMakeFiles/huffman.dir/link.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../huffman/cmake-build-debug/CMakeFiles/huffman.dir/main.cpp.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../huffman/cmake-build-debug/CMakeFiles/huffman.dir/progress.make" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../huffman/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../huffman/cmake-build-debug/CMakeFiles/util.dir/DependInfo.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../huffman/cmake-build-debug/CMakeFiles/util.dir/build.make" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../huffman/cmake-build-debug/CMakeFiles/util.dir/cmake_clean.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../huffman/cmake-build-debug/CMakeFiles/util.dir/depend.make" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../huffman/cmake-build-debug/CMakeFiles/util.dir/flags.make" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../huffman/cmake-build-debug/CMakeFiles/util.dir/link.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../huffman/cmake-build-debug/CMakeFiles/util.dir/progress.make" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../huffman/cmake-build-debug/Makefile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../huffman/cmake-build-debug/cmake_install.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../huffman/cmake-build-debug/huffman" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../huffman/cmake-build-debug/huffman.cbp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../huffman/gtest/gtest-all.cc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../huffman/gtest/gtest.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../huffman/gtest/gtest_main.cc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../huffman/huffman.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../huffman/test/testing_huffman.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../huffman/utility.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../super_vector/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../super_vector/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../super_vector/.idea/super_vector.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../super_vector/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../super_vector/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../super_vector/CMakeLists.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../super_vector/counted.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../super_vector/counted.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../super_vector/fault_injection.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../super_vector/fault_injection.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../super_vector/gtest/gtest-all.cc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../super_vector/gtest/gtest.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../super_vector/gtest/gtest_main.cc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../super_vector/vector.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../super_vector/vector.hpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../super_vector/vector_testing.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../set/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../set/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../set/counted.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../set/counted.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../set/fault_injection.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../set/fault_injection.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../set/gtest/gtest-all.cc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../set/gtest/gtest.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../set/gtest/gtest_main.cc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../set/main.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../set/set_testing.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../a.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/vector_testing.dir/vector_testing.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/vector_testing.dir/counted.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/vector_testing.dir/counted.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/vector_testing.dir/fault_injection.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/vector_testing.dir/fault_injection.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/vector_testing.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/vector_testing.dir/flags.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/vector_testing.dir/gtest/gtest-all.cc.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/vector_testing.dir/gtest/gtest-all.cc.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/vector_testing.dir/gtest/gtest_main.cc.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/vector_testing.dir/gtest/gtest_main.cc.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/vector_testing.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/vector_testing.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/vector_testing.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/vector_testing.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/vector_testing.dir/vector_testing.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/vector_testing.dir/vector_testing.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/vector.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/vector.cbp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/vector_testing" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/vector_testing" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vector.h" beforeDir="false" afterPath="$PROJECT_DIR$/vector.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vector_testing.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/vector_testing.cpp" afterDir="false" />
@@ -149,60 +56,66 @@
     <session id="-1369894647">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="6" />
           <entry key="project.open.time.0" value="1" />
-          <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.1" value="2" />
+          <entry key="project.open.time.10" value="1" />
+          <entry key="project.open.time.2" value="1" />
+          <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.opened" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
+          <entry key="" value="1" />
           <entry key="__functional_base" value="18" />
           <entry key="__tree" value="5" />
           <entry key="__tuple" value="2" />
           <entry key="cc" value="14" />
-          <entry key="cpp" value="80" />
+          <entry key="cpp" value="83" />
           <entry key="functional" value="9" />
           <entry key="h" value="33" />
           <entry key="iterator" value="6" />
+          <entry key="md" value="1" />
           <entry key="memory" value="8" />
           <entry key="new" value="1" />
           <entry key="set" value="3" />
-          <entry key="txt" value="5" />
-          <entry key="type_traits" value="13" />
+          <entry key="txt" value="7" />
+          <entry key="type_traits" value="14" />
           <entry key="variant" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CMakeLists.txt" value="5" />
-          <entry key="ObjectiveC" value="200" />
+          <entry key="CMakeLists.txt" value="7" />
+          <entry key="ObjectiveC" value="204" />
+          <entry key="PLAIN_TEXT" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cpp" value="1100" />
-          <entry key="h" value="10889" />
-          <entry key="mm" value="687" />
-          <entry key="txt" value="69" />
+          <entry key="cpp" value="1217" />
+          <entry key="h" value="11251" />
+          <entry key="mm" value="763" />
+          <entry key="txt" value="76" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CMakeLists.txt" value="69" />
-          <entry key="ObjectiveC" value="12676" />
+          <entry key="CMakeLists.txt" value="76" />
+          <entry key="ObjectiveC" value="13231" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vector_testing.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="111">
-              <caret line="1035" selection-start-line="1035" selection-end-line="1035" />
+            <state relative-caret-position="226">
+              <caret line="111" selection-start-line="111" selection-end-line="111" />
               <folding>
                 <element signature="e#0#24#0" expanded="true" />
               </folding>
@@ -211,10 +124,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gtest/gtest-all.cc">
+        <entry file="file://$PROJECT_DIR$/counted.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="305">
-              <caret line="6140" selection-start-line="6140" selection-end-line="6140" />
+            <state relative-caret-position="236">
+              <caret line="21" selection-start-line="21" selection-end-line="21" />
             </state>
           </provider>
         </entry>
@@ -223,7 +136,7 @@
         <entry file="file://$PROJECT_DIR$/fault_injection.cpp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="121">
-              <caret line="122" selection-start-line="122" selection-end-line="122" />
+              <caret line="166" selection-start-line="166" selection-end-line="166" />
               <folding>
                 <element signature="e#1071#1476#0" expanded="true" />
                 <element signature="e#2397#2401#0" expanded="true" />
@@ -232,15 +145,33 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/vector.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="258">
-              <caret line="526" selection-start-line="526" selection-end-line="526" />
+            <state relative-caret-position="134">
+              <caret line="306" selection-start-line="306" selection-end-line="306" />
               <folding>
                 <element signature="e#131#143#0" expanded="true" />
                 <element signature="e#402#412#0" expanded="true" />
+                <element signature="e#5417#5441#0" expanded="true" />
+                <element signature="e#6357#6381#0" expanded="true" />
+                <element signature="e#20865#20877#0" expanded="true" />
+                <element signature="e#20944#20956#0" expanded="true" />
+                <element signature="e#21104#21116#0" expanded="true" />
+                <element signature="e#21208#21220#0" expanded="true" />
+                <element signature="e#21370#21382#0" expanded="true" />
+                <element signature="e#21480#21492#0" expanded="true" />
+                <element signature="e#21579#21591#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="20" selection-start-line="20" selection-end-line="20" />
             </state>
           </provider>
         </entry>
@@ -249,23 +180,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>std::cerr</find>
-      <find>be</find>
-      <find>const_ref</find>
-      <find>operator*</find>
-      <find>begin</find>
-      <find>size_in_ptr()</find>
-      <find>size_in_ptr</find>
-      <find>dest</find>
-      <find>push_back_si</find>
-      <find>free</find>
-      <find>copy_ctor</find>
-      <find>catch</find>
-      <find>copy</find>
-      <find>reser</find>
-      <find>fault_registred</find>
-      <find>~</find>
-      <find>nothrow_subscript</find>
       <find>rese</find>
       <find>empty</find>
       <find>inse</find>
@@ -276,9 +190,26 @@
       <find>allocate_and_cop</find>
       <find>resiz</find>
       <find>destroy</find>
-      <find>operator=</find>
       <find>insert</find>
       <find>reserve_a</find>
+      <find>copy_if</find>
+      <find>copy_ctor</find>
+      <find>ass</find>
+      <find>copy_i</find>
+      <find>new</find>
+      <find>free</find>
+      <find>free_check</find>
+      <find>vector(</find>
+      <find>operator</find>
+      <find>operator=</find>
+      <find>operator[]</find>
+      <find>counter_in_ptr</find>
+      <find>free_</find>
+      <find>counter</find>
+      <find>copy</find>
+      <find>che</find>
+      <find>only</find>
+      <find>push_back_sim</find>
     </findStrings>
     <replaceStrings>
       <replace>get_data(</replace>
@@ -295,8 +226,8 @@
         <option value="$PROJECT_DIR$/counted.cpp" />
         <option value="$PROJECT_DIR$/main.cpp" />
         <option value="$PROJECT_DIR$/gtest/gtest.h" />
-        <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/fault_injection.cpp" />
+        <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/vector_testing.cpp" />
         <option value="$PROJECT_DIR$/vector.h" />
       </list>
@@ -358,11 +289,6 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="main" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="vector" TARGET_NAME="main" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="vector" RUN_TARGET_NAME="main">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="vector_testing" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="vector" TARGET_NAME="vector_testing" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="vector" RUN_TARGET_NAME="vector_testing">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -370,7 +296,6 @@
     </configuration>
     <list>
       <item itemvalue="Application.Build All" />
-      <item itemvalue="Application.main" />
       <item itemvalue="Application.vector_testing" />
     </list>
   </component>
@@ -386,18 +311,21 @@
       <updated>1561124828830</updated>
       <workItem from="1561124830289" duration="817000" />
       <workItem from="1561125683277" duration="54502000" />
-      <workItem from="1561464517419" duration="44114000" />
+      <workItem from="1561464517419" duration="44562000" />
+      <workItem from="1561789572459" duration="147000" />
+      <workItem from="1561792046404" duration="20000" />
+      <workItem from="1561794399641" duration="963000" />
+      <workItem from="1561817923087" duration="9019000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="99433000" />
+    <option name="totallyTimeSpent" value="110030000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4965035" visible="true" weight="0.21486267" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4965035" visible="true" weight="0.22778675" />
       <window_info id="Structure" order="1" sideWeight="0.5034965" side_tool="true" weight="0.25767368" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -438,13 +366,13 @@
         </breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/vector_testing.cpp</url>
-          <line>1035</line>
-          <option name="timeStamp" value="317" />
+          <line>144</line>
+          <option name="timeStamp" value="358" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/vector.h</url>
-          <line>525</line>
-          <option name="timeStamp" value="345" />
+          <url>file://$PROJECT_DIR$/vector_testing.cpp</url>
+          <line>111</line>
+          <option name="timeStamp" value="386" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
@@ -464,11 +392,50 @@
         <watch expression="capacity()" language="ObjectiveC" />
         <watch expression="size()" language="ObjectiveC" />
         <watch expression="new_vector.size()" language="ObjectiveC" />
+        <watch expression="ptr + 2 * sizeof(size_t)" language="ObjectiveC" />
+        <watch expression="new_ptr + 2 * sizeof(size_t)" language="ObjectiveC" />
+        <watch expression="ptr " language="ObjectiveC" />
+        <watch expression="ptr + sizeof(size_t)" language="ObjectiveC" />
       </configuration>
     </watches-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="watch">
+      <expression>
+        <expression-string>d</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>ptr + 2 * sizeof(size_t)</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>new_ptr + 2 * sizeof(size_t)</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>ptr + sizeof(size_t)</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>ptr + sizeof(sqlite3_value_type())</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>ptr</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>ptr + 2 * sizeof(value_type)</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>new_vector.size()</expression-string>
         <language-id>ObjectiveC</language-id>
@@ -484,41 +451,6 @@
         <language-id>ObjectiveC</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
-      <expression>
-        <expression-string>ptr.size()</expression-string>
-        <language-id>ObjectiveC</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>size()</expression-string>
-        <language-id>ObjectiveC</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>instances</expression-string>
-        <language-id>ObjectiveC</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>capacity()</expression-string>
-        <language-id>ObjectiveC</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>contest-&gt;fault_registred</expression-string>
-        <language-id>ObjectiveC</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>fault_registred</expression-string>
-        <language-id>ObjectiveC</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>faul</expression-string>
-        <language-id>ObjectiveC</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
@@ -526,13 +458,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="483">
           <caret line="22" column="17" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="427">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
         </state>
       </provider>
     </entry>
@@ -561,9 +486,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="128">
           <caret line="271" selection-start-line="271" selection-end-line="271" />
-          <folding>
-            <element signature="e#11203#11243#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -592,9 +514,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="112">
           <caret line="7" selection-start-line="7" selection-end-line="7" />
-          <folding>
-            <element signature="e#14#35#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -609,13 +528,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="134">
           <caret line="20057" selection-start-line="20057" selection-end-line="20057" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///Library/Developer/CommandLineTools/usr/include/c++/v1/type_traits">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="89">
-          <caret line="4338" selection-start-line="4338" selection-end-line="4338" />
         </state>
       </provider>
     </entry>
@@ -647,23 +559,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/counted.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="36" selection-start-line="36" selection-end-line="36" />
-          <folding>
-            <element signature="e#0#20#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gtest/gtest-all.cc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="6140" selection-start-line="6140" selection-end-line="6140" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include/stddef.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="146">
@@ -671,21 +566,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vector.h">
+    <entry file="file://$PROJECT_DIR$/README.">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="526" selection-start-line="526" selection-end-line="526" />
-          <folding>
-            <element signature="e#131#143#0" expanded="true" />
-            <element signature="e#402#412#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="23">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gtest/gtest-all.cc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141220">
+          <caret line="6140" selection-start-line="6140" selection-end-line="6140" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Developer/CommandLineTools/usr/include/c++/v1/type_traits">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="89">
+          <caret line="4338" selection-start-line="4338" selection-end-line="4338" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/fault_injection.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="121">
-          <caret line="122" selection-start-line="122" selection-end-line="122" />
+          <caret line="166" selection-start-line="166" selection-end-line="166" />
           <folding>
             <element signature="e#1071#1476#0" expanded="true" />
             <element signature="e#2397#2401#0" expanded="true" />
@@ -693,12 +608,39 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/counted.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/vector_testing.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
-          <caret line="1035" selection-start-line="1035" selection-end-line="1035" />
+        <state relative-caret-position="226">
+          <caret line="111" selection-start-line="111" selection-end-line="111" />
           <folding>
             <element signature="e#0#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vector.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="134">
+          <caret line="306" selection-start-line="306" selection-end-line="306" />
+          <folding>
+            <element signature="e#131#143#0" expanded="true" />
+            <element signature="e#402#412#0" expanded="true" />
+            <element signature="e#5417#5441#0" expanded="true" />
+            <element signature="e#6357#6381#0" expanded="true" />
+            <element signature="e#20865#20877#0" expanded="true" />
+            <element signature="e#20944#20956#0" expanded="true" />
+            <element signature="e#21104#21116#0" expanded="true" />
+            <element signature="e#21208#21220#0" expanded="true" />
+            <element signature="e#21370#21382#0" expanded="true" />
+            <element signature="e#21480#21492#0" expanded="true" />
+            <element signature="e#21579#21591#0" expanded="true" />
           </folding>
         </state>
       </provider>
