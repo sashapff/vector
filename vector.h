@@ -596,9 +596,6 @@ public:
     }
 
     void swap(vector &other) {
-        if (is_ptr_type() && std::get<0>(variant)) {
-            free_check(std::get<0>(variant));
-        }
         variant.swap(other.variant);
     }
 

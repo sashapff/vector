@@ -145,6 +145,10 @@ vector
 /Users/alexandra/Desktop/vector/vector.h
 variant
 -
+memory
+-
+cassert
+-
 
 /Users/alexandra/Desktop/vector/vector_testing.cpp
 gtest/gtest.h
