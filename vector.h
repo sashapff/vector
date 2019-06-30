@@ -596,7 +596,55 @@ public:
     }
 
     void swap(vector &other) {
-        variant.swap(other.variant);
+        switch (variant.index()) {
+            case 0:
+                switch (other.variant.index()) {
+                    case 0:
+                        variant.swap(other.variant);
+                        break;
+                    case 1: {
+                        auto old = std::get<0>(variant);
+                        try {
+                            variant = other.variant;
+                        }
+                        catch (...) {
+                            variant = old;
+                            throw;
+                        }
+                        other.variant = old;
+                        break;
+                    }
+                    default:
+                        assert(false);
+                        break;
+                }
+                break;
+            case 1:
+                switch (other.variant.index()) {
+                    case 0: {
+                        auto old = std::get<0>(other.variant);
+                        try {
+                            other.variant = variant;
+                        }
+                        catch (...) {
+                            other.variant = old;
+                            throw;
+                        }
+                        variant = old;
+                        break;
+                    }
+                    case 1:
+                        variant.swap(other.variant);
+                        break;
+                    default:
+                        assert(false);
+                        break;
+                }
+                break;
+            default:
+                assert(false);
+                break;
+        }
     }
 
 private:
@@ -757,7 +805,8 @@ private:
         if (counter_in_ptr(ptr) > 1) {
             info_pointer new_ptr = nullptr;
             try {
-                new_ptr = reinterpret_cast<info_pointer>(operator new(3 * sizeof(size_t) + capacity_in_ptr(ptr) * sizeof(value_type)));
+                new_ptr = reinterpret_cast<info_pointer>(operator new(
+                        3 * sizeof(size_t) + capacity_in_ptr(ptr) * sizeof(value_type)));
                 size_in_ptr(new_ptr) = size_in_ptr(ptr);
                 capacity_in_ptr(new_ptr) = capacity_in_ptr(ptr);
                 counter_in_ptr(new_ptr) = 1;
