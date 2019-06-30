@@ -6,6 +6,8 @@
 #define VECTOR_VECTOR_H
 
 #include <variant>
+#include <memory>
+#include <cassert>
 
 template<typename T>
 struct iterator {
@@ -510,11 +512,11 @@ public:
         if (is_ptr_type()) {
             vector buffer;
             try {
-                for (size_t i = 0u; i < pos - begin(); i++) {
+                for (size_t i = 0u; i < static_cast<size_t>(pos - begin()); i++) {
                     buffer.push_back(get_data(std::get<0>(variant))[i]);
                 }
                 buffer.push_back(val);
-                for (size_t i = pos - begin(); i < size(); i++) {
+                for (size_t i = static_cast<size_t>(pos - begin()); i < size(); i++) {
                     buffer.push_back(get_data(std::get<0>(variant))[i]);
                 }
             } catch (...) {
@@ -594,6 +596,9 @@ public:
     }
 
     void swap(vector &other) {
+        if (is_ptr_type() && std::get<0>(variant)) {
+            free_check(std::get<0>(variant));
+        }
         variant.swap(other.variant);
     }
 
