@@ -230,8 +230,8 @@ public:
     typedef T &reference;
     typedef T const &const_reference;
 
-    typedef iterator<T> iterator;
-    typedef const_iterator<T> const_iterator;
+    typedef ::iterator<T> iterator;
+    typedef ::const_iterator<T> const_iterator;
     typedef std::reverse_iterator<iterator> reverse_iterator;
     typedef std::reverse_iterator<const_iterator> const_reverse_iterator;
 
@@ -307,7 +307,6 @@ public:
             if (std::get<0>(variant)) {
                 copy_if_necessary(std::get<0>(variant));
             }
-            auto ptr = std::get<0>(variant);
             return get_data(std::get<0>(variant))[i];
         }
         return std::get<1>(variant);
@@ -511,7 +510,7 @@ public:
         if (is_ptr_type()) {
             vector buffer;
             try {
-                for (size_t i = 0; i < pos - begin(); i++) {
+                for (size_t i = 0u; i < pos - begin(); i++) {
                     buffer.push_back(get_data(std::get<0>(variant))[i]);
                 }
                 buffer.push_back(val);
@@ -555,7 +554,6 @@ public:
             size_t begin_size = first - begin();
             auto erase_size = static_cast<size_t>(last - first);
             auto end_size = static_cast<size_t>(end() - last);
-            pointer begin_ptr = data();
             pointer erase_ptr = data() + begin_size;
             pointer end_ptr = data() + begin_size + erase_size;
             if (end_size <= erase_size) {
