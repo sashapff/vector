@@ -304,7 +304,9 @@ public:
 
     reference operator[](size_t i) {
         if (is_ptr_type()) {
-            copy_if_necessary(std::get<0>(variant));
+            if (std::get<0>(variant)) {
+                copy_if_necessary(std::get<0>(variant));
+            }
             auto ptr = std::get<0>(variant);
             return get_data(std::get<0>(variant))[i];
         }
@@ -347,6 +349,9 @@ public:
     }
 
     void push_back(const_reference a) {
+        if (is_ptr_type() && std::get<0>(variant)) {
+            copy_if_necessary(std::get<0>(variant));
+        }
         if (empty()) {
             if (capacity() == 0) {
                 try {
@@ -716,9 +721,9 @@ private:
         try {
             construct(get_data(std::get<0>(variant)) + size_in_ptr(std::get<0>(variant)), a);
         } catch (...) {
-//            if (counter_in_ptr(std::get<0>(variant)) != 1) {
-//                free_always(std::get<0>(variant));
-//            }
+            if (counter_in_ptr(std::get<0>(variant)) > 1) {
+                free_always(std::get<0>(variant));
+            }
             throw;
         }
     }
@@ -750,18 +755,18 @@ private:
 
     void copy_if_necessary(info_pointer ptr) {
         if (counter_in_ptr(ptr) > 1) {
-            auto new_ptr = reinterpret_cast<info_pointer>(operator new(
-                    3 * sizeof(size_t) + size_in_ptr(ptr) * sizeof(value_type)));
-            size_in_ptr(new_ptr) = size_in_ptr(ptr);
-            capacity_in_ptr(new_ptr) = capacity_in_ptr(ptr);
-            counter_in_ptr(new_ptr) = 1;
-            counter_in_ptr(ptr)--;
+            info_pointer new_ptr = nullptr;
             try {
+                new_ptr = reinterpret_cast<info_pointer>(operator new(3 * sizeof(size_t) + capacity_in_ptr(ptr) * sizeof(value_type)));
+                size_in_ptr(new_ptr) = size_in_ptr(ptr);
+                capacity_in_ptr(new_ptr) = capacity_in_ptr(ptr);
+                counter_in_ptr(new_ptr) = 1;
                 std::uninitialized_copy(get_data(ptr), get_data(ptr) + size_in_ptr(ptr), get_data(new_ptr));
             } catch (...) {
                 free_empty(new_ptr);
                 throw;
             }
+            counter_in_ptr(ptr)--;
             variant = new_ptr;
         }
     }
